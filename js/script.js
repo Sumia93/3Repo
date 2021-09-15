@@ -3,7 +3,7 @@ $(document).ready(function() {
 });
 $('.intro .owl-carousel').owlCarousel({
     rtl: true,
-    loop: false,
+    loop: true,
     margin: 15,
     nav: true,
     responsive: {
@@ -20,7 +20,7 @@ $('.intro .owl-carousel').owlCarousel({
 });
 $('.clients .owl-carousel').owlCarousel({
     rtl: true,
-    loop: false,
+    loop: true,
     margin: 15,
     nav: true,
     responsive: {

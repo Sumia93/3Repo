@@ -1,0 +1,48 @@
+.section-title {
+    text-align: right;
+    position: relative;
+    margin-right: 3%;
+}
+
+.section-title h2 {
+    margin-right: 2%;
+    font-size: 1.5rem;
+}
+
+.section-line {
+    display: inline-block !important;
+    width: 3px !important;
+    height: 50px !important;
+    position: absolute;
+    right: 0;
+    top: -13px;
+}
+
+.users {
+    background-image: url(../imgs/bg30-Ar1web.gif);
+    padding: 2% 0 4% 0;
+}
+
+.users .card {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.users .card .card-img-top {
+    border-radius: 20px;
+    padding: 6% 0;
+}
+
+@media (max-width:767px) {
+    .users .card {
+        width: 100%;
+    }
+    .section-title h2 {
+        font-size: .8rem;
+    }
+    .section-line {
+        top: -5px;
+    }
+}

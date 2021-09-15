@@ -1,0 +1,32 @@
+#sec-5 {
+    padding: 0 !important;
+}
+
+#sec-5 .section-title {
+    text-align: right;
+    position: relative;
+    margin-right: 3%;
+}
+
+#sec-5 .section-title h2 {
+    margin-right: 1%;
+}
+
+#sec-5 .section-line {
+    display: inline-block;
+    width: 3px;
+    height: 45px;
+    position: absolute;
+    right: 0;
+    top: -21px;
+}
+
+.pagination {
+    font-size: 1.5rem;
+}
+
+@media (max-width:992px) {
+    #sec-5 .section-line {
+        top: -6px;
+    }
+}

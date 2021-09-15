@@ -4,14 +4,10 @@
   }
   
    :root {
-      --main_color: ##3aade6;
+      --main_color: #3aade6;
       --prim_color: #000;
       --sec_color: #fff;
       --link_color: #233142;
-  }
-  
-  a {
-      text-decoration: none;
   }
   
   #sec-1 nav img {
@@ -39,24 +35,37 @@
   
   #sec-2 .teck-details {
       background-image: url(../imgs/header-side.jpg);
-      height: 733px;
+      height: 727px;
       background-repeat: no-repeat;
-      background-size: 80%;
+      background-size: 70%;
   }
   
   #sec-2 .teck-details h2 {
       margin-top: 15%;
-      font-size: 4rem;
+      font-size: 3rem;
       line-height: 1.5;
   }
   
   #sec-2 .teck-image img {
-      width: 90%;
+      width: 100%;
+  }
+  
+  @media (max-width:768px) {
+      #sec-2 .teck-image {
+          display: flex;
+          justify-content: center;
+      }
+      #sec-2 .teck-details h2 {
+          font-size: 1.5rem;
+      }
   }
   
   @media (min-width:768px) and (max-width:992px) {
+      #sec-2 .teck-details h2 {
+          font-size: 2.5rem;
+      }
       #sec-2 .teck-details {
-          width: 100%;
+          background-size: 70%;
       }
   }
   /*sec-3*/
@@ -78,7 +87,6 @@
       width: 40px;
       margin-top: 2%;
   }
-  /*sec3*/
   
   #sec-3 .we-image img {
       width: 70%;
@@ -91,10 +99,16 @@
       text-align: justify;
   }
   
-  @media (min-width:768px) and (max-width:992px) {
-      #sec-3 .we-details {
-          width: 100% !important;
+  @media (max-width:992px) {
+      #sec-3 .we-image {
           text-align: center;
+      }
+      #sec-3 .we-details {
+          text-align: center;
+      }
+      #sec-3 .we-details p {
+          width: 100%;
+          font-size: 1rem;
       }
   }
   /*sec4*/
@@ -113,6 +127,17 @@
   .owl-carousel .card {
       border-radius: 15px;
       padding: 5% 0;
+      position: relative;
+  }
+  
+  #sec-4 .card-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-decoration: none;
+      z-index: 5;
   }
   
   .owl-carousel .card img {
@@ -140,6 +165,7 @@
   
   #sec-5 .works .card {
       border-radius: 20px;
+      margin-bottom: 3%;
   }
   
   #sec-5 .works .card .card-img-top {
@@ -150,15 +176,6 @@
       text-align: center;
       font-size: 1.7rem;
       padding: 2%;
-  }
-  
-  @media (min-width:768px) and (max-width:992px) {
-      #sec-5 .row {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-      }
   }
   /*sec-6*/
   
@@ -175,9 +192,6 @@
   
   #sec-6 .micro .card {
       border-radius: 15px;
-  }
-  
-  #sec-6 .micro .card {
       box-shadow: 0 0 10px #000;
   }
   
@@ -195,7 +209,7 @@
   }
   
   #sec-6 aside button {
-      font-size: 1.5rem;
+      font-size: 1rem;
   }
   
   .more {
@@ -212,11 +226,18 @@
       padding: 5px 70px;
       border-radius: 15px;
       font-size: 1.5rem;
+      text-decoration: none;
   }
   
-  @media (min-width:992px) {
-      #sec-6 .card {
-          display: block;
+  @media (max-width:992px) {
+      #sec-6 .col-md-10.offset-md-2 {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 5%;
+      }
+      #sec-6 .micro .card {
+          width: 100% !important;
+          margin-bottom: 5%;
       }
   }
   /*sec-7*/
@@ -233,8 +254,12 @@
       justify-content: center;
   }
   
+  .owl-theme .owl-nav {
+      font-size: 4.5rem;
+  }
+  
   #sec-7 .clients img {
-      width: 80%;
+      width: 60%;
   }
   /*sec-8*/
   
@@ -243,11 +268,12 @@
       background-repeat: no-repeat;
       background-size: 100%;
       background-size: cover;
+      background-position: bottom;
       height: auto;
+      padding: 7% 0;
   }
   
   footer .footer-flex {
-      /*height: 100vh;*/
       display: flex;
       justify-content: space-evenly;
       align-items: center;
@@ -291,6 +317,22 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
+          align-items: center;
+      }
+  }
+  
+  @media (max-width:767px) {
+      footer article p,
+      footer article .icons a i {
+          font-size: 1rem;
+      }
+      footer article .icons {
+          text-align: center;
+      }
+      footer aside img {
+          width: 100% !important;
+      }
+      .footer-flex article {
           align-items: center;
       }
   }
